@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tenant-api
+  name: tenant-service
   namespace: {{ .Release.Namespace }}
   labels:
-    app: tenant-api
+    app: tenant-service
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: tenant-api
+    app: tenant-service
   ports:
     - protocol: TCP
       port: {{ .Values.service.port }}

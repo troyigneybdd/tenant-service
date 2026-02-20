@@ -5,7 +5,8 @@
   "description": "Shared tests for MetricsAggregator services",
   "type": "commonjs",
   "scripts": {
-    "test": "jest --runInBand"
+    "validate:deploy": "bash validate-deploy.sh",
+    "test": "npm run validate:deploy && jest --runInBand"
   },
   "devDependencies": {
     "body-parser": "1.20.4",

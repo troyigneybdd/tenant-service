@@ -1,5 +1,0 @@
-apiVersion: v2
-name: tenant-api
-version: 0.1.0
-description: Helm chart for tenant-api deployment
-appVersion: "1.0"

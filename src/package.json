@@ -1,8 +1,9 @@
 {
-  "name": "tenants-api",
+  "name": "tenant-service",
   "version": "1.0.0",
-  "main": "tenants-api.js",
+  "main": "tenant-service.js",
   "dependencies": {
     "express": "4.22.1"
   }
 }
+

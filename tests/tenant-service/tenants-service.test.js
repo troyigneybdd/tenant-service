@@ -1,7 +1,7 @@
 const request = require('supertest');
 const { app, setTenants } = require('../../src/tenants-api');
 
-describe('tenant-api', () => {
+describe('tenant-service', () => {
   beforeEach(() => {
     setTenants([]);
   });

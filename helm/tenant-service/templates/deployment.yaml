@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tenant-api
+  name: tenant-service
   namespace: {{ .Release.Namespace }}
   labels:
-    app: tenant-api
+    app: tenant-service
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: tenant-api
+      app: tenant-service
   template:
     metadata:
       labels:
-        app: tenant-api
+        app: tenant-service
     spec:
       containers:
         - name: api

@@ -1,6 +1,6 @@
-# tenant-api Helm Chart
+# tenant-service Helm Chart
 
-This chart deploys the tenant-api service with best practices for configuration and resource management.
+This chart deploys the tenant-service service with best practices for configuration and resource management.
 
 ## Usage
 Customize values in `values.yaml` or override with `--set` during install.

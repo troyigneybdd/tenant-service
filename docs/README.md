@@ -3,14 +3,18 @@
 ## Overview
 
 Simple REST API that stores tenant namespace/token pairs in memory. Operators
-can
-use it to discover tenants and configure routing.
+can use it to discover tenants and configure routing.
 
 ## Runtime
 
 - Language: JavaScript (Node.js)
 
 - Framework: Express
+
+## Dependencies
+
+- Express for HTTP routing and JSON parsing.
+- In-memory storage (no database).
 
 ## Environment Variables
 
@@ -25,6 +29,16 @@ use it to discover tenants and configure routing.
 - `PUT /tenants/:namespace` - Update a tenant token.
 
 - `DELETE /tenants/:namespace` - Remove a tenant.
+
+## Ingress (What It Accepts)
+
+- JSON requests to create, update, and delete tenant records.
+- The `namespace` and `token` fields are required for create.
+- The `token` field is required for update.
+
+## Egress (Outbound)
+
+- No outbound HTTP calls. This service only stores and serves tenant data.
 
 ## Request: Add Tenant
 

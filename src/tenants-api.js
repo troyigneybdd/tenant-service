@@ -3,7 +3,7 @@ const app = express();
 
 const { envInt } = require('./env');
 
-const PORT = envInt(['SERVICE_PORT', 'PORT'], 8080);
+const PORT = envInt('SERVICE_PORT', 8080);
 
 let tenants = [
   { namespace: 'tenant-internal', token: 'tenant-internal' }
